@@ -1,0 +1,50 @@
+POST http://localhost:8080/category HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "name": "Categoria 2",
+  "description": "Categoria 1 Descrição"
+}
+
+###
+
+GET http://localhost:8080/categories HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+
+###
+GET http://localhost:8080/category/41b40e7a-61d9-4459-84be-0fa644b3ccb3 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+###
+POST http://localhost:8080/product HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "name": "Produto 125",
+  "price": 100,
+  "category_id": "41b40e7a-61d9-4459-84be-0fa644b3ccb3",
+  "image_url": "https://placehold.co/600x400",
+  "description": "Produto 1 Descrição"
+}
+
+###
+
+GET http://localhost:8080/products HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+###
+GET http://localhost:8080/product/4217bd5a-bb40-45f7-ab51-a5fba7b04aa5 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/product/category/41b40e7a-61d9-4459-84be-0fa644b3ccb3 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
