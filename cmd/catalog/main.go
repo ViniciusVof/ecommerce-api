@@ -42,7 +42,7 @@ func main() {
 
 	c.Get("/product/{id}", webProductHandler.GetProduct)
 	c.Get("/products", webProductHandler.GetProducts)
-	c.Get("/product/category/{categoryID}", webProductHandler.GetProductByCategoryID)
+	c.Get("/products/category/{categoryID}", webProductHandler.GetProductByCategoryID)
 	c.Post("/product", webProductHandler.CreateProduct)
 
 	fmt.Println("Server is running on port 8080")
